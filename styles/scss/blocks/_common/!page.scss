@@ -1,0 +1,54 @@
+.page {
+
+  position: relative;
+  
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  &__header {
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__footer {
+  }
+  
+  &__container {
+    max-width: calc(var(--max-container-width) + 2 * var(--content-padding));
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+  }
+
+  &__title {
+    @extend %fs-h1;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  &__section-title {
+    @extend %fs-h2;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  &__button {
+    border-radius: 2rem;
+    padding: 0.8rem 1.6rem;
+
+    @extend %fs-t1;
+    font-weight: 700;
+    color: $color-contrasting;
+    background-color: $color-accent;
+    box-shadow: 0.2rem 0.2rem 1rem $color-accent;
+    &:hover {
+      color: $color-contrasting;
+    }
+  }
+}

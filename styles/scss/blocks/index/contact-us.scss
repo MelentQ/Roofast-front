@@ -1,0 +1,63 @@
+.contact-us {
+  position: relative;
+
+  padding: 4rem 0;
+
+  background-color: black;
+  color: white;
+
+  &__image-wrapper {
+    position: absolute;
+    z-index: $bg-image-z-index;
+
+    top: 0;
+    right: 0;
+
+    height: 100%;
+  }
+
+  &__image {
+    height: 100%;
+    width: auto;
+
+    object-fit: contain;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: $context-text-z-index;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__form-wrapper {
+    position: relative;
+  }
+
+  &__form {
+  }
+
+  &__form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 1rem;
+  }
+
+  &__form-input {
+  }
+
+  &__form-textarea {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    min-height: 6rem;
+  }
+
+  &__form-button {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,32 @@
+// 1. Установить node.js
+// 2. $ npm install -g sass
+// 3. $ sass --watch --no-source-map styles/scss/main.scss styles/main.css
+// ======
+// Либо писать код прямо в main.css
+
+// scss
+@import "./blocks/_common/variables";
+@import "./blocks/_common/mixins";
+@import "./blocks/_common/extends";
+
+// vendor styles
+@import "../vendor/reset";
+
+// common styles
+@import "./blocks/_common/!global";
+@import "./blocks/_common/!page";
+@import "./blocks/_common/header";
+@import "./blocks/_common/logo";
+@import "./blocks/_common/menu";
+@import "./blocks/_common/form";
+@import "./blocks/_common/footer";
+@import "./blocks/_common/top-btn";
+@import "./blocks/_common/phone";
+
+// pages:
+
+// index.html
+@import "./blocks/index/intro";
+@import "./blocks/index/benefits";
+@import "./blocks/index/benefit";
+@import "./blocks/index/contact-us";

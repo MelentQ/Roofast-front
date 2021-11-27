@@ -1,0 +1,21 @@
+.menu {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 0.5rem;
+  }
+
+  &__item {
+
+    &_active {
+      border-bottom: 0.1rem solid $base-font-color;
+    }
+  }
+
+  &__link {
+    letter-spacing: 0.02em;
+    font-weight: 400;
+  }
+}

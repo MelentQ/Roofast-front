@@ -1,0 +1,123 @@
+.form {
+
+  max-width: 40rem;
+
+  opacity: 1;
+  visibility: visible;
+
+  &_hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__inputs {
+    
+  }
+
+  &__input {
+    padding: 0.4rem 0;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1rem solid white;
+    color: white;
+  }
+
+  &__textarea {
+    resize: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1rem solid white;
+    font-family: $base-font-family;
+    color: white;
+  }
+
+  &__checkbox {
+    display: block;
+    position: relative;
+    
+    padding-left: 25px;
+    margin-bottom: 12px;
+
+    @extend %fs-t3;
+    cursor: pointer;
+    user-select: none;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    &:hover input ~ .form__checkmark {
+      border-color: $color-accent;
+    }
+
+    input:checked ~ .form__checkmark:after {
+      display: block;
+    }
+
+    .form__checkmark:after {
+      left: 4px;
+      top: 0px;
+      width: 4px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 0.1rem solid white;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  &__policy-link {
+    border-bottom: 0.1rem solid white;
+  }
+
+  &__button {
+  }
+
+  &__button-icon {
+  }
+
+  &__success {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    &_visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__success-title {
+    margin-bottom: 1rem;
+
+    @extend %fs-h4;
+  }
+
+  &__success-btn {
+    @extend %fs-t2;
+    color: white;
+    border-bottom: 0.1rem solid white;
+  }
+}

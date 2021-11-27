@@ -1,0 +1,21 @@
+.benefits {
+
+  padding: 2rem 0;
+
+  background-color: $intro-bg-color;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+}

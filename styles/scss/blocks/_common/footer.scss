@@ -1,0 +1,31 @@
+.footer {
+
+  padding: 2rem 0;
+
+  background-color: black;
+  color: white;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-block {
+  }
+
+  &__copyright-block {
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-icon {
+    margin-right: 1rem;
+  }
+
+  &__phone-text {
+  }
+}
