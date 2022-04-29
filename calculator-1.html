@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 900 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <title>Roofast</title>
+</head>
+
+<body>
+  <div class="page">
+    <!-- header--light -->
+    <header class="page__header header header--light" id="js-header">
+      <div class="page__container">
+        <div class="header__inner">
+          <a class="logo header__logo-block" href="./index.html" title="На главную">
+            <!-- logo-light.png -->
+            <img class="logo__image" src="./images/content/logo-light.png" alt="Logo">
+            <span class="logo__label">Roofast</span>
+          </a>
+
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html">Главная</a>
+              </li>
+              <!-- active -->
+              <li class="menu__item menu__item_active">
+                <a class="menu__link" href="./calculator-1.html">Калькулятор</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./about.html">О сервисе</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./info.html">Информация</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__content" id="js-content">
+      <section class="calculator">
+        <div class="page__container">
+          <div class="calculator__inner">
+            <h2 class="calculator__title">Расчёт двускатной крыши</h2>
+            <div class="calculator__columns">
+              <div class="calculator__left">
+                <form class="calculator__form">
+                  <span class="calculator__form-heading">Размеры (в см)</span>
+                  <fieldset class="calculator__form-group">
+                    <span class="calculator__form-group-heading">Размеры дома</span>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Длина <b>X</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Ширина <b>B</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Высота крови <b>H</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Свес кровли <b>C</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculator__form-group">
+                    <span class="calculator__form-group-heading">Размеры стропил</span>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Ширина <b>S1</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Толщина <b>S2</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Расстояние между стропилами <b>S3</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculator__form-group">
+                    <span class="calculator__form-group-heading">Размеры обрешетки</span>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Ширина <b>O1</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Толщина <b>O2</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Расстояние между досками <b>O3</b></span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculator__form-group">
+                    <span class="calculator__form-group-heading">Размеры листа покрытие</span>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Длина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Ширина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Нахлест сверху</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Нахлест сбоку</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculator__form-group">
+                    <div class="calculator__form-group-heading-checkboxed">
+                      <label class="form__checkbox">
+                        <input type="checkbox" checked="checked">
+                        <span class="form__checkmark"></span>
+                      </label>
+                      <span class="calculator__form-group-heading">Считать мауэрлат</span>
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Ширина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Толщина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculator__form-group">
+                    <div class="calculator__form-group-heading-checkboxed">
+                      <label class="form__checkbox">
+                        <input type="checkbox" checked="checked">
+                        <span class="form__checkmark"></span>
+                      </label>
+                      <span class="calculator__form-group-heading">Считать гидроизоляцию</span>
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Длина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Ширина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Нахлест</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculator__form-group">
+                    <div class="calculator__form-group-heading-checkboxed">
+                      <label class="form__checkbox">
+                        <input type="checkbox" checked="checked">
+                        <span class="form__checkmark"></span>
+                      </label>
+                      <span class="calculator__form-group-heading">Считать контробрешетку</span>
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Ширина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Толщина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                  </fieldset>
+                  <fieldset class="calculator__form-group">
+                    <div class="calculator__form-group-heading-checkboxed">
+                      <label class="form__checkbox">
+                        <input type="checkbox" checked="checked">
+                        <span class="form__checkmark"></span>
+                      </label>
+                      <span class="calculator__form-group-heading">Считать утеплитель</span>
+                    </div>
+                    <div class="calculator__form-input-block">
+                      <span class="calculator__form-input-label">Толщина</span>
+                      <input class="calculator__form-input" type="text">
+                    </div>
+                  </fieldset>
+
+                  <a class="calculator__form-btn" href="./calculator-2.html">РАССЧИТАТЬ</a>
+                </form>
+              </div>
+              <div class="calculator__right">
+                <div class="calculator__images">
+                  <img src="images/content/calculator/1.png" alt="Calc 1">
+                  <img src="images/content/calculator/2.png" alt="Calc 2">
+                  <img src="images/content/calculator/3.png" alt="Calc 3">
+                  <img src="images/content/calculator/4.png" alt="Calc 4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <div class="page__container">
+        <div class="footer__inner">
+          <a class="logo footer__logo-block" href="./index.html" title="На главную">
+            <img class="logo__image" src="./images/content/logo-light.png" alt="Logo">
+            <span class="logo__label">Roofast</span>
+          </a>
+          <div class="footer__copyright-block">
+            2021 &copy; Все права защищены
+          </div>
+          <button class="top-btn" id="js-top-btn" title="Наверх">
+            <img class="top-btn__icon" src="./images/content/arrow.svg" alt="Top icon">
+          </button>
+          <a class="phone footer__phone" href="tel:+79171231456" title="Позвонить">
+            <img class="phone__icon footer__phone-icon" src="./images/content/phone.png" alt="Phone icon">
+            <span class="phone__text footer__phone-text">+7 917 123 14 56</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
   --max-container-width: 168rem;
   --content-padding: 10rem;
 
-  @include breakpoint(tablet) {
+  @include breakpoint(laptop) {
     --content-padding: 2.4rem;
   }
   @include breakpoint(small-tablet) {

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <title>Roofast</title>
+</head>
+
+<body>
+  <div class="page">
+    <!-- header--light -->
+    <header class="page__header header header--light" id="js-header">
+      <div class="page__container">
+        <div class="header__inner">
+          <a class="logo header__logo-block" href="./index.html" title="На главную">
+            <!-- logo-light.png -->
+            <img class="logo__image" src="./images/content/logo-light.png" alt="Logo">
+            <span class="logo__label">Roofast</span>
+          </a>
+
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html">Главная</a>
+              </li>
+              <!-- active -->
+              <li class="menu__item">
+                <a class="menu__link" href="./calculator-1.html">Калькулятор</a>
+              </li>
+              <li class="menu__item menu__item_active">
+                <a class="menu__link" href="./about.html">О сервисе</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./info.html">Информация</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__content" id="js-content">
+      <section class="about">
+        <div class="page__container">
+          <div class="about__inner">
+            <h2 class="about__title">О нашем сервисе</h2>
+
+            <div class="about__item">
+              <div class="benefit">
+                <div class="benefit__icon-block">
+                  <img class="benefit__icon" src="./images/content/benefit-1.jpg" alt="Benefit icon">
+                </div>
+                <div class="benefit__description-block">
+                  <h3 class="benefit__title">Быстро
+                  </h3>
+                  <p class="benefit__description">
+                    Экономия времени и ресурсов
+                  </p>
+                </div>
+              </div>
+              <div class="about__text">
+                Наш сервис позволяет максимально сэкономить время на самостоятельные расчеты, а также на расходы работ
+                проектировщиков, сметчиков и т.д. Время-ценный ресурс, поэтому если можно облегчить себе работу, то
+                нужно пользоваться этим. А наш сайт с абсолютной точностью Вам это обеспечит!
+              </div>
+            </div>
+
+            <div class="about__item">
+              <div class="benefit">
+                <div class="benefit__icon-block">
+                  <img class="benefit__icon" src="./images/content/benefit-2.jpg" alt="Benefit icon">
+                </div>
+                <div class="benefit__description-block">
+                  <h3 class="benefit__title">Удобно
+                  </h3>
+                  <p class="benefit__description">
+                    Легость и понятность в использовании
+                  </p>
+                </div>
+              </div>
+              <div class="about__text">
+                Удобство в использовании является одним из важнейших факторов, который в нашем сервисе точно соблюден.
+                Минималистичный дизайн, понятность и легкость в вводе входных и выходных параметров. Также имеется
+                страница “Информация” специально для того, чтобы каждый начинающий строитель мог изучить и применить
+                данную информацию в расчетах.
+              </div>
+            </div>
+
+            <div class="about__item">
+              <div class="benefit">
+                <div class="benefit__icon-block">
+                  <img class="benefit__icon" src="./images/content/benefit-3.jpg" alt="Benefit icon">
+                </div>
+                <div class="benefit__description-block">
+                  <h3 class="benefit__title">Качественно
+                  </h3>
+                  <p class="benefit__description">
+                    Только актуальная и проверенная информация
+                  </p>
+                </div>
+              </div>
+              <div class="about__text">
+                Наш сервис не потерпит недочетов и обмана. Мы используем только качественную и проверенную информацию,
+                только из достоверных источников. Будьте абсолютно уверены в том, что расчет крыши будет производиться
+                без малейших ошибок, а если и найдете или у вас возникнут вопросы, то обязательно сообщите нам! Ведь нам
+                не все равно на качество работы.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <div class="page__container">
+        <div class="footer__inner">
+          <a class="logo footer__logo-block" href="./index.html" title="На главную">
+            <img class="logo__image" src="./images/content/logo-light.png" alt="Logo">
+            <span class="logo__label">Roofast</span>
+          </a>
+          <div class="footer__copyright-block">
+            2021 &copy; Все права защищены
+          </div>
+          <button class="top-btn" id="js-top-btn" title="Наверх">
+            <img class="top-btn__icon" src="./images/content/arrow.svg" alt="Top icon">
+          </button>
+          <a class="phone footer__phone" href="tel:+79171231456" title="Позвонить">
+            <img class="phone__icon footer__phone-icon" src="./images/content/phone.png" alt="Phone icon">
+            <span class="phone__text footer__phone-text">+7 917 123 14 56</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+</body>
+
+</html>

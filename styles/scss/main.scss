@@ -1,4 +1,4 @@
-// 1. Установить node.js
+// 1. Установить node.js, npm
 // 2. $ npm install -g sass
 // 3. $ sass --watch --no-source-map styles/scss/main.scss styles/main.css
 // ======
@@ -30,3 +30,13 @@
 @import "./blocks/index/benefits";
 @import "./blocks/index/benefit";
 @import "./blocks/index/contact-us";
+
+// calculator-x.html
+@import "./blocks/calculator/calculator";
+@import "./blocks/calculator/price";
+
+// about.html
+@import "./blocks/about/about";
+
+// info.html
+@import "./blocks/info/info";

@@ -1,0 +1,45 @@
+.about {
+  padding-top: calc(var(--header-height) + 40px);
+  padding-bottom: 60px;
+
+  background-image: url(../images/calculator-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
+
+  .benefit {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+  }
+}

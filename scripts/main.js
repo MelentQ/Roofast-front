@@ -12,7 +12,26 @@ window.addEventListener('load', () => {
   });
 
   initTopBtn("#js-top-btn");
+  checkboxes();
 })
+
+function checkboxes() {
+  const containers = Array.from(document.querySelectorAll('.js-checkboxes'));
+  containers.forEach(container => {
+    const checkboxes = Array.from(container.querySelectorAll('.js-checkbox'));
+    checkboxes.forEach((checkbox, i) => {
+      checkbox.addEventListener('click', () => {
+        checkboxes.forEach((c, j) => {
+          if (j == i) {
+            c.classList.add('active');
+          } else {
+            c.classList.remove('active');
+          }
+        })
+      })
+    })
+  })
+}
 
 /**
  * Создаёт CSS-переменную "--header-height", которая хранит высоту шапки
