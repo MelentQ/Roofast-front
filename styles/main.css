@@ -105,7 +105,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: black;
 }
 
@@ -120,7 +120,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: greenyellow;
+  color: #82D174;
 }
 
 button {
@@ -131,17 +131,17 @@ button {
   transition: color 0.3s ease;
 }
 button:hover {
-  color: greenyellow;
+  color: #82D174;
 }
 
 a:focus, button:focus, input:focus, textarea:focus {
-  outline: dotted 0.1rem greenyellow;
+  outline: dotted 0.1rem #82D174;
   outline-offset: 0.1rem;
 }
 
 ::selection {
   color: white;
-  background-color: greenyellow;
+  background-color: #82D174;
 }
 
 .page {
@@ -152,9 +152,8 @@ a:focus, button:focus, input:focus, textarea:focus {
   overflow: hidden;
 }
 .page__content {
+  min-height: 100%;
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
 }
 .page__container {
   max-width: calc(var(--max-container-width) + 2 * var(--content-padding));
@@ -174,21 +173,20 @@ a:focus, button:focus, input:focus, textarea:focus {
   padding: 0.8rem 1.6rem;
   font-weight: 700;
   color: white;
-  background-color: greenyellow;
-  box-shadow: 0.2rem 0.2rem 1rem greenyellow;
+  background: linear-gradient(290deg, #53AA48 30%, #82D174 72%);
+  box-shadow: 0px 9px 50px #406D07;
 }
 .page__button:hover {
   color: white;
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 5;
   width: 100%;
-  padding: 2rem 0;
-  background-color: orange;
+  padding: 0.6rem 0;
 }
 .header__inner {
   display: flex;
@@ -203,12 +201,12 @@ a:focus, button:focus, input:focus, textarea:focus {
   align-items: center;
 }
 .logo__image {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 .logo__label {
-  margin-left: 1rem;
+  margin-left: 0.4rem;
   font-weight: 700;
 }
 
@@ -220,6 +218,9 @@ a:focus, button:focus, input:focus, textarea:focus {
 }
 .menu__item_active {
   border-bottom: 0.1rem solid black;
+}
+.menu__item_active .menu__link {
+  font-weight: 700;
 }
 .menu__link {
   letter-spacing: 0.02em;
@@ -247,7 +248,7 @@ a:focus, button:focus, input:focus, textarea:focus {
   background-color: transparent;
   border: none;
   border-bottom: 0.1rem solid white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
 }
 .form__checkbox {
@@ -266,7 +267,7 @@ a:focus, button:focus, input:focus, textarea:focus {
   width: 0;
 }
 .form__checkbox:hover input ~ .form__checkmark {
-  border-color: greenyellow;
+  border-color: #82D174;
 }
 .form__checkbox input:checked ~ .form__checkmark:after {
   display: block;
@@ -334,45 +335,41 @@ a:focus, button:focus, input:focus, textarea:focus {
 }
 .intro {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: var(--header-height);
-  background-color: orange;
+  background: linear-gradient(90deg, #F3AD26 10%, rgb(210, 101, 1) 80%);
+}
+.intro__text {
+  margin-top: 90px;
 }
 .intro__image-wrapper {
   position: absolute;
   top: 50%;
-  right: 10vw;
+  right: 72px;
   transform: translateY(-50%);
-  z-index: 1;
-  width: 30vw;
-  height: 0;
-  padding-top: 30vw;
 }
 .intro__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: auto;
+  height: 600px;
+  object-fit: contain;
 }
 .intro__inner {
   position: relative;
   z-index: 2;
 }
 .intro__title {
-  max-width: 24rem;
+  max-width: 30rem;
   line-height: 1.2;
 }
 .intro__subtitle {
-  max-width: 24rem;
+  max-width: 30rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   line-height: 1.4;
 }
 .benefits {
   padding: 2rem 0;
-  background-color: orange;
+  background: linear-gradient(90deg, #F3AD26 10%, rgb(210, 101, 1) 80%);
 }
 .benefits__title {
   margin-bottom: 2rem;
@@ -394,6 +391,7 @@ a:focus, button:focus, input:focus, textarea:focus {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  border-radius: 20px;
 }
 .benefit__title {
   margin-bottom: 0.4rem;

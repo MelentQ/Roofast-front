@@ -11,6 +11,10 @@
 
     &_active {
       border-bottom: 0.1rem solid $base-font-color;
+
+      .menu__link {
+        font-weight: 700;
+      }
     }
   }
 
