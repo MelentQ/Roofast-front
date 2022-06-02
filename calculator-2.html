@@ -198,65 +198,109 @@
         </div>
       </section>
 
-      <section class="price">
+      <section class="price js-init-tabs">
         <div class="page__container">
           <div class="price__inner">
             <h2 class="price__heading">
               Если вы хотите узнать стоимость кровли, то уточните следующие детали:
             </h2>
             <span class="price__label">Материал кровли</span>
-            <ul class="price__materials js-checkboxes">
-              <li class="price__material js-checkbox active">
+            <ul class="price__materials js-checkboxes js-tabs">
+              <li class="price__material js-checkbox active js-tab">
                 <img class="price__checkbox" src="images/icons/checked.svg" alt="Checked">
                 <img class="price__material-image" src="images/content/materials/1.png" alt="Material">
                 <span class="price__material-name">Профнастил</span>
               </li>
-              <li class="price__material js-checkbox">
+              <li class="price__material js-checkbox js-tab">
                 <img class="price__checkbox" src="images/icons/checked.svg" alt="Checked">
                 <img class="price__material-image" src="images/content/materials/2.png" alt="Material">
                 <span class="price__material-name">Металлочерепица</span>
               </li>
-              <li class="price__material js-checkbox">
+              <li class="price__material js-checkbox js-tab">
                 <img class="price__checkbox" src="images/icons/checked.svg" alt="Checked">
                 <img class="price__material-image" src="images/content/materials/3.png" alt="Material">
                 <span class="price__material-name">Фальцевая кровля</span>
               </li>
-              <li class="price__material js-checkbox">
+              <li class="price__material js-checkbox js-tab">
                 <img class="price__checkbox" src="images/icons/checked.svg" alt="Checked">
                 <img class="price__material-image" src="images/content/materials/4.png" alt="Material">
                 <span class="price__material-name">Гибкая черепица</span>
               </li>
             </ul>
-            <span class="price__label">Материал кровли</span>
-            <div class="price__radio-block">
-              <span class="price__radio-name">Профиль:</span>
-              <ul class="price__radio-list js-checkboxes">
-                <li class="price__radio-item js-checkbox active">C20</li>
-                <li class="price__radio-item js-checkbox">H57</li>
-                <li class="price__radio-item js-checkbox">H60</li>
-                <li class="price__radio-item js-checkbox">H75</li>
-                <li class="price__radio-item js-checkbox">HC35</li>
-                <li class="price__radio-item js-checkbox">HC44</li>
-              </ul>
-            </div>
-            <div class="price__radio-block">
-              <span class="price__radio-name">Покрытие:</span>
-              <ul class="price__radio-list js-checkboxes">
-                <li class="price__radio-item js-checkbox active">Оцинкованный</li>
-                <li class="price__radio-item js-checkbox">Полиэстер</li>
-              </ul>
-            </div>
-            <div class="price__radio-block">
-              <span class="price__radio-name">Толщина:</span>
-              <ul class="price__radio-list js-checkboxes">
-                <li class="price__radio-item js-checkbox">0.4</li>
-                <li class="price__radio-item js-checkbox">0.45</li>
-                <li class="price__radio-item js-checkbox active">0.5</li>
-                <li class="price__radio-item js-checkbox">0.6</li>
-                <li class="price__radio-item js-checkbox">0.7</li>
-                <li class="price__radio-item js-checkbox">0.8</li>
-              </ul>
-            </div>
+
+            <ul class="js-bodies">
+              <li class="js-body active">
+                <span class="price__label">Материал кровли</span>
+                <div class="price__radio-block">
+                  <span class="price__radio-name">Профиль:</span>
+                  <ul class="price__radio-list js-checkboxes">
+                    <li class="price__radio-item js-checkbox active">C20</li>
+                    <li class="price__radio-item js-checkbox">H57</li>
+                    <li class="price__radio-item js-checkbox">H60</li>
+                    <li class="price__radio-item js-checkbox">H75</li>
+                    <li class="price__radio-item js-checkbox">HC35</li>
+                    <li class="price__radio-item js-checkbox">HC44</li>
+                  </ul>
+                </div>
+                <div class="price__radio-block">
+                  <span class="price__radio-name">Покрытие:</span>
+                  <ul class="price__radio-list js-checkboxes">
+                    <li class="price__radio-item js-checkbox active">Оцинкованный</li>
+                    <li class="price__radio-item js-checkbox">Полиэстер</li>
+                  </ul>
+                </div>
+                <div class="price__radio-block">
+                  <span class="price__radio-name">Толщина:</span>
+                  <ul class="price__radio-list js-checkboxes">
+                    <li class="price__radio-item js-checkbox">0.4</li>
+                    <li class="price__radio-item js-checkbox">0.45</li>
+                    <li class="price__radio-item js-checkbox active">0.5</li>
+                    <li class="price__radio-item js-checkbox">0.6</li>
+                    <li class="price__radio-item js-checkbox">0.7</li>
+                    <li class="price__radio-item js-checkbox">0.8</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="js-body">
+                <span class="price__label">Материал кровли</span>
+                <div class="price__radio-block">
+                  <span class="price__radio-name">Профиль:</span>
+                  <ul class="price__radio-list js-checkboxes">
+                    <li class="price__radio-item js-checkbox active">C20</li>
+                    <li class="price__radio-item js-checkbox">H57</li>
+                    <li class="price__radio-item js-checkbox">H60</li>
+                    <li class="price__radio-item js-checkbox">H75</li>
+                    <li class="price__radio-item js-checkbox">HC35</li>
+                    <li class="price__radio-item js-checkbox">HC44</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="js-body">
+                <div class="price__radio-block">
+                  <span class="price__radio-name">Покрытие:</span>
+                  <ul class="price__radio-list js-checkboxes">
+                    <li class="price__radio-item js-checkbox active">Оцинкованный</li>
+                    <li class="price__radio-item js-checkbox">Полиэстер</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="js-body">
+                <div class="price__radio-block">
+                  <span class="price__radio-name">Толщина:</span>
+                  <ul class="price__radio-list js-checkboxes">
+                    <li class="price__radio-item js-checkbox">0.4</li>
+                    <li class="price__radio-item js-checkbox">0.45</li>
+                    <li class="price__radio-item js-checkbox active">0.5</li>
+                    <li class="price__radio-item js-checkbox">0.6</li>
+                    <li class="price__radio-item js-checkbox">0.7</li>
+                    <li class="price__radio-item js-checkbox">0.8</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
 
             <div class="price__result-block">
               <h3 class="price__result-block-title">Расчет стоимости материалов</h3>

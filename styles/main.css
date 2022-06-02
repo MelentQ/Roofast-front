@@ -182,6 +182,14 @@ a:focus, button:focus, input:focus, textarea:focus {
   color: white;
 }
 
+.js-body {
+  display: none;
+}
+
+.js-body.active {
+  display: block;
+}
+
 .header {
   position: absolute;
   top: 0;
